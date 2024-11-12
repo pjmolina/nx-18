@@ -1,2 +1,48 @@
-<app-nx-welcome></app-nx-welcome>
-<router-outlet></router-outlet>
+<header>
+  <h1>Titulo de aplicacion</h1>
+</header>
+<main class="modo-2cols">
+  <div class="menu">
+    <nav>
+      <ul>
+        <li>
+          <a [routerLink]="['/inicio']" routerLinkActive="activo">Welcome</a>
+        </li>
+        <li>
+          <a [routerLink]="['/about']" routerLinkActive="activo">About</a>
+        </li>
+        <li>
+          <a [routerLink]="['/pizzas']" routerLinkActive="activo">Pizzas</a>
+        </li>
+        <li>
+          <a [routerLink]="['/pizzas/mar']" routerLinkActive="activo"
+            >Pizza Margarita</a
+          >
+        </li>
+        <li>
+          <a
+            [routerLink]="['/pizzas/car']"
+            [queryParams]="{ a: '1' }"
+            routerLinkActive="activo"
+            >Pizza Carbonara</a
+          >
+        </li>
+        <li>
+          <a [routerLink]="['/pizzas/pin']" routerLinkActive="activo"
+            >Pizza Piña</a
+          >
+        </li>
+        <li>
+          <a [routerLink]="['/almacen']" routerLinkActive="activo">Almacen</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</main>
+<footer>
+  <hr />
+  &copy; IGME, 2024.
+</footer>

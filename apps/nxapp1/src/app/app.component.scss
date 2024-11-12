@@ -1,0 +1,26 @@
+.modo-2cols {
+  display: flex;
+  flex-direction: row;
+}
+.menu {
+  width: 15rem;
+  border: 1px solid #aaa;
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+.content {
+  width: 100%;
+  min-height: 30rem;
+  border: 1px solid #aaa;
+  padding: 1rem;
+  background-color: #fcfcfc;
+}
+
+.activo {
+  background-color: aqua;
+  font-weight: bold;
+}

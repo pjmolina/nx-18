@@ -1,0 +1,23 @@
+<h1>Listado de pizzas</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Precio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let pizza of pizzas">
+      <td>
+        <a (click)="detalle(pizza.id)">{{ pizza.name }}</a>
+      </td>
+      <td>{{ pizza.price }} EUR</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>...</td>
+      <td></td>
+    </tr>
+  </tfoot>
+</table>
