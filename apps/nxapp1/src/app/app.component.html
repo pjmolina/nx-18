@@ -1,12 +1,14 @@
 <header>
-  <h1>Titulo de aplicacion</h1>
+  <h1 i18n="title">Titulo de aplicacion</h1>
 </header>
 <main class="modo-2cols">
   <div class="menu">
     <nav>
       <ul>
         <li>
-          <a [routerLink]="['/inicio']" routerLinkActive="activo">Welcome</a>
+          <a [routerLink]="['/inicio']" routerLinkActive="activo" i18n="welcome"
+            >Welcome</a
+          >
         </li>
         <li>
           <a [routerLink]="['/about']" routerLinkActive="activo">About</a>
