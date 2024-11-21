@@ -15,6 +15,7 @@
     "@angular/platform-browser": "~18.2.0",
     "@angular/platform-browser-dynamic": "~18.2.0",
     "@angular/router": "~18.2.0",
+    "angular-three": "^2.8.0",
     "rxjs": "~7.8.0",
     "zone.js": "~0.14.3"
   },
@@ -40,6 +41,7 @@
     "@swc/helpers": "~0.5.11",
     "@types/jest": "^29.5.12",
     "@types/node": "18.16.9",
+    "@types/three": "^0.170.0",
     "@typescript-eslint/utils": "^8.0.0",
     "angular-eslint": "^18.3.0",
     "cypress": "^13.13.0",
